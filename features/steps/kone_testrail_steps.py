@@ -92,3 +92,8 @@ def step_impl(context):
 @then(u'the user is logged out')
 def step_impl(context):
     raise NotImplementedError(u'STEP: Then the user is logged out')
+
+@then('close the browser')
+def step_impl5(context):
+    driver.close()
+    driver.quit()
